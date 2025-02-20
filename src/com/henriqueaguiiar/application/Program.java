@@ -13,9 +13,9 @@ public class Program {
 
         System.out.print("Digite o título do livro: ");
         String tituloLivro = input.nextLine();
+        System.out.print("Digite sua API Key: ");
+        String chave = input.nextLine();
 
-
-        String chave =  "AIzaSyDdD6yghSGR84yCiRQn38RNAAPUzHCTye0";
         String endereco = "https://www.googleapis.com/books/v1/volumes?q=" + tituloLivro + "&key=" + chave;
 
 
@@ -28,7 +28,6 @@ public class Program {
 
 
         System.out.println(response.body());
-
 
 
         input.close();
